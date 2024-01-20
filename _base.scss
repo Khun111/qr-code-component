@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin flex($display: flex, $place: center) {
+    display: $display;
+    place-items: $place;
+}
+body  {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    place-items: center;
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(212, 45%, 89%);
+    img {
+        max-width: 100%;
+    }
+    main {
+        margin: auto;
+        text-align: center;
+    }
+}
